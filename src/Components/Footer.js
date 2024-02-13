@@ -21,22 +21,28 @@ const Footer = () => {
       </div>
       <div className="footer-section-two">
         <div className="footer-section-columns">
-          <span>Qualtiy</span>
-          <span>Help</span>
-          <span>Share</span>
-          <span>Carrers</span>
+          <span>Ocean Container Shipping Rates from USA</span>
+          <span>Air Freight</span>
+          <span>Ground Transportation</span>
+          <span>Warehousing & Distribution</span>
+          <span>Customs Clearance</span>
           <span>Testimonials</span>
           <span>Work</span>
+           
         </div>
         <div className="footer-section-columns">
-          <span>244-5333-7783</span>
-          <span>hello@food.com</span>
-          <span>press@food.com</span>
-          <span>contact@food.com</span>
+          <span>Tel: 1-803-884-5729</span>
+          <span>info@riverrocklogistics.com</span>
+          <span>STE 300-#9001</span>
+          <span>Columbia, SC 29201</span>
         </div>
         <div className="footer-section-columns">
           <span>Terms & Conditions</span>
           <span>Privacy Policy</span>
+          <span>Our Story</span>
+          <span>Premium Club</span>
+          <span>FAQ</span>
+          
         </div>
       </div>
     </div>
