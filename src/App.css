@@ -289,6 +289,12 @@ nav {
   border-radius: 1rem;
   color: #505050;
   margin: 1rem 2rem;
+  &:hover{
+    background-color: #FE9E0D;
+    transition: all 0.5s;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 .work-section-info h2 {
   margin: 1rem 0rem;
