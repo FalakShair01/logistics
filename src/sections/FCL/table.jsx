@@ -30,7 +30,7 @@ export default function BasicTable() {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
 
                 <TableHead>
-                    <TableRow sx={{ borderTop: "1px solid #E0E0E0", backgroundColor:"#ccc" }}>
+                    <TableRow sx={{ borderTop: "1px solid #E0E0E0", backgroundColor:"#FEF9F3" }}>
                         <TableCell sx={{ borderRight: "1px solid #E0E0E0" }} />
                         <TableCell />
                         <TableCell>Exterior</TableCell>
@@ -42,7 +42,7 @@ export default function BasicTable() {
                         <TableCell sx={{ borderRight: "1px solid #E0E0E0" }} />
                         <TableCell>Max</TableCell>
                     </TableRow>
-                    <TableRow sx={{backgroundColor:"#ccc"}}>
+                    <TableRow sx={{backgroundColor:"#FEF9F3"}}>
                         <TableCell sx={{ borderRight: "1px solid #E0E0E0" }}>Size/Type</TableCell>
                         <TableCell>Length</TableCell>
                         <TableCell>Width</TableCell>

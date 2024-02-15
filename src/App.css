@@ -10,8 +10,8 @@ img {
 }
 .App {
   min-height: 100vh;
-  width: 85vw;
-  max-width: 1900px;
+  /* width: 85vw;
+  max-width: 1900px; */
   margin: 0rem auto;
 }
 body {
@@ -28,6 +28,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
+  padding-left: 7vw;
+  padding-right: 7vw;
 }
 .navbar-menu-container {
   display: none;
@@ -50,9 +52,7 @@ nav {
   font-weight: 600;
   transition: 0.2s;
 }
-.navbar-cart-icon {
-  font-size: 1.15rem;
-}
+
 .primary-button:hover {
   background-color: rgb(234, 234, 234);
 }
@@ -64,6 +64,10 @@ nav {
   position: relative;
   display: flex;
   padding-top: 3rem;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  /* width: 85vw; */
+  /* max-width: 1900px; */
 }
 .home-bannerImage-container {
   position: absolute;
@@ -123,6 +127,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 7vw;
+  padding-right: 7vw;
 }
 .about-background-image-container {
   position: absolute;
@@ -148,27 +154,8 @@ nav {
   margin-top: 2rem;
   display: flex;
 }
-.watch-video-button {
-  margin-left: 2rem;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  border-radius: 5rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-  font-weight: 600;
-  color: #484848;
-  transition: 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.watch-video-button svg {
-  font-size: 3rem;
-  margin-right: 1rem;
-}
 .contact-page-wrapper h1 {
-  max-width: 900px !important;
+  max-width: 900px !important;   
 }
 .contact-page-wrapper {
   display: flex;
@@ -176,6 +163,8 @@ nav {
   justify-content: center;
   flex-direction: column;
   margin: 6rem 0rem;
+  padding-left: 7vw;
+  padding-right: 7vw;
 }
 .contact-form-container {
   background-color: white;
@@ -196,10 +185,26 @@ nav {
   padding: 0.5rem 1rem;
 }
 .footer-wrapper {
-  margin: 6rem 0rem;
+  /* margin: 6rem 0rem; */
   display: flex;
-  margin-top: 10rem;
+ 
 }
+/* styles.css */
+
+/* Target input fields inside FormControl and set their background color to white */
+.MuiFormControl-root input[type="text"],
+.MuiFormControl-root input[type="number"],
+ textarea {
+    background-color: white;
+}
+
+.background-image {
+  background-image: url('./Assets/b.jpg'); /* Specify the path to your image */
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 6rem;
+  /* margin-top: 10rem; */
+ }
 .footer-logo-container {
   max-width: 110px;
 }
@@ -210,6 +215,9 @@ nav {
   font-size: 1.5rem;
   margin-right: 1.25rem;
   color: #585858;
+  &:hover{
+    color: #fe9e0d;
+  }
 }
 /* .footer-section-one {
   border: 2px solid blue;
@@ -229,6 +237,9 @@ nav {
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
+  &:hover{
+    color: #fe9e0d;
+  }
 }
 .testimonial-section-bottom {
   margin-top: 2rem;
@@ -289,13 +300,18 @@ nav {
   border-radius: 1rem;
   color: #505050;
   margin: 1rem 2rem;
-  &:hover{
+  transition: background-color 0.5s, color 0.5s, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add more transition properties */
+
+  &:hover {
     background-color: #FE9E0D;
-    transition: all 0.5s;
     color: #fff;
     cursor: pointer;
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
   }
 }
+
+
 .work-section-info h2 {
   margin: 1rem 0rem;
 }
@@ -430,5 +446,8 @@ nav {
   .home-bannerImage-container,
   .about-background-image-container {
     display: none;
+  }
+  .nvocc{
+    width: 30%;
   }
 }

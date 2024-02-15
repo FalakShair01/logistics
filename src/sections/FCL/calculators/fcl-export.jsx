@@ -1,15 +1,16 @@
-import { Grid, FormControl, Select, TextField, Typography, MenuItem, RadioGroup, FormControlLabel, Radio, Checkbox } from '@mui/material'
+import { Grid, FormControl, Select, TextField, Typography, MenuItem, RadioGroup, FormControlLabel, Radio, Checkbox ,Paper} from '@mui/material'
 import React from 'react'
 
 function fclExport() {
     return (
-        <Grid container sx={{marginBottom:"2rem"}}>
+        <Paper elevation={3} sx={{marginBottom:"2rem",bgcolor:"#FEF9F3", padding:"20px"}}>
+        <Grid container >
             <Grid item xs={12}>
                 <Grid container spacing={3}>
                     <Grid item sm={1} />
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d" >First Name*</Typography>
-                        <TextField size='small' placeholder='First Name' fullWidth color='warning'/>
+                        <TextField size='small' placeholder='First Name' fullWidth color='warning' />
                     </Grid>
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Last Name*</Typography>
@@ -39,7 +40,7 @@ function fclExport() {
                     <Grid item sm={1} />
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Select Origin or Nearest City*</Typography>
-                        <FormControl color='warning' fullWidth size='small'>
+                        <FormControl color='warning' fullWidth size='small' sx={{bgcolor:"white"}}>
                             <Select>
                                 <MenuItem value={20}>FCL </MenuItem>
                                 <MenuItem value={30}>LCL </MenuItem>
@@ -49,7 +50,7 @@ function fclExport() {
                     </Grid>
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Select Destination*</Typography>
-                        <FormControl color='warning' fullWidth size='small'>
+                        <FormControl color='warning' fullWidth size='small' sx={{bgcolor:"white"}}>
                             <Select>
                                 <MenuItem value={20}>FCL </MenuItem>
                                 <MenuItem value={30}>LCL </MenuItem>
@@ -61,7 +62,7 @@ function fclExport() {
                     <Grid item sm={1} />
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Select Description Of Commodity*</Typography>
-                        <FormControl color='warning' fullWidth size='small'>
+                        <FormControl color='warning' fullWidth size='small' sx={{bgcolor:"white"}}>
                             <Select>
                                 <MenuItem value={20}>FCL </MenuItem>
                                 <MenuItem value={30}>LCL </MenuItem>
@@ -72,7 +73,7 @@ function fclExport() {
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Weight (Estimate Ok)*</Typography>
                         <TextField size='small' color='warning' placeholder='12345' type='number' />
-                        <FormControl color='warning' size='small' sx={{ width: "7rem", marginLeft: "2rem" }}>
+                        <FormControl color='warning' size='small' sx={{ width: "7rem", marginLeft: "2rem",bgcolor:"white" }}>
                             <Select>
                                 <MenuItem value={20}>Pounds </MenuItem>
                                 <MenuItem value={30}>Kilograms </MenuItem>
@@ -103,15 +104,15 @@ function fclExport() {
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Is the Cargo Hazardous Material?</Typography>
                         <RadioGroup row >
-                            <FormControlLabel value="Yes" control={<Radio size='small' />} label={<Typography variant='body2' color="#fe9e0d">Yes</Typography>} />
-                            <FormControlLabel value="No" control={<Radio size='small' />} label={<Typography variant='body2' color="#fe9e0d">No</Typography>} />
+                            <FormControlLabel value="Yes" control={<Radio size='small' />} label={<Typography variant='body2' >Yes</Typography>} />
+                            <FormControlLabel value="No" control={<Radio size='small' />} label={<Typography variant='body2'>No</Typography>} />
                         </RadioGroup>
                     </Grid>
                     <Grid item sm={1} />
                     <Grid item sm={1} />
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">How far is your cargo in the USA to the US Loading Rail Ramp or Port You Selected Above? Distance in the USA?</Typography>
-                        <FormControl color='warning' fullWidth size='small'>
+                        <FormControl color='warning' fullWidth size='small' sx={{bgcolor:"white"}}>
                             <Select color='warning' placeholder='Refers to Distance from Origin City Selected Above to Loading Zip Code in USA.'>
                                 <MenuItem value={20}>FCL </MenuItem>
                                 <MenuItem value={30}>LCL </MenuItem>
@@ -122,8 +123,8 @@ function fclExport() {
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Do you want to get charged by our Customs Broker for customs clearance at destination? Duties/Taxes Not Included.</Typography>
                         <RadioGroup row >
-                            <FormControlLabel value="Yes" control={<Radio size='small' />} label={<Typography variant='body2' color="#fe9e0d">Yes</Typography>} />
-                            <FormControlLabel value="No" control={<Radio size='small' />} label={<Typography variant='body2' color="#fe9e0d">No, I can go to customs or hire a broker.</Typography>} />
+                            <FormControlLabel value="Yes" control={<Radio size='small' />} label={<Typography variant='body2' >Yes</Typography>} />
+                            <FormControlLabel value="No" control={<Radio size='small' />} label={<Typography variant='body2'>No, I can go to customs or hire a broker.</Typography>} />
                         </RadioGroup>
                     </Grid>
                     <Grid item sm={1} />
@@ -131,7 +132,7 @@ function fclExport() {
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Do You Need Delivery?</Typography>
                         <FormControlLabel control={<Checkbox size="small" />} label="Yes" />
-                        <FormControl color='warning' size='small' sx={{ width: "17rem" }}>
+                        <FormControl color='warning' size='small' sx={{ width: "17rem" ,bgcolor:"white"}} >
                             <Select color='warning' placeholder='Refers to Distance from Origin City Selected Above to Loading Zip Code in USA.'>
                                 <MenuItem value={20}>FCL </MenuItem>
                                 <MenuItem value={30}>LCL </MenuItem>
@@ -154,15 +155,15 @@ function fclExport() {
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Who is Loading the Car or Boat?</Typography>
                         <RadioGroup row >
-                            <FormControlLabel value="Yes" control={<Radio size='small' />} label={<Typography variant='body2' color="#fe9e0d">Shipper (I am)</Typography>} />
-                            <FormControlLabel value="No" control={<Radio size='small' />} label={<Typography variant='body2' color="#fe9e0d">Option Our Warehouse Will Charge</Typography>} />
+                            <FormControlLabel value="Yes" control={<Radio size='small' />} label={<Typography variant='body2'>Shipper (I am)</Typography>} />
+                            <FormControlLabel value="No" control={<Radio size='small' />} label={<Typography variant='body2'>Option Our Warehouse Will Charge</Typography>} />
                         </RadioGroup>
                     </Grid>
                     <Grid item sm={1} />
                     <Grid item sm={1} />
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">When Are You Shipping?</Typography>
-                        <FormControl color='warning' fullWidth size='small'>
+                        <FormControl color='warning' fullWidth size='small' sx={{bgcolor:"white"}}>
                             <Select color='warning' placeholder='Refers to Distance from Origin City Selected Above to Loading Zip Code in USA.'>
                                 <MenuItem value={20}>FCL</MenuItem>
                                 <MenuItem value={30}>LCL</MenuItem>
@@ -182,11 +183,9 @@ function fclExport() {
                     </Grid>
                     <Grid item xs={12} sm={5}>
                         <Typography variant='body2' color="#fe9e0d">Please provide a full description of the nature of your cargo. *</Typography>
-                        <TextField fullWidth color='warning' placeholder="any additional services you may require and questions you may have." minRows={2} multiline />
+                        <TextField fullWidth color='warning' placeholder="any additional services you may require and questions you may have." minRows={2} multiline sx={{bgcolor:"white"}}/>
                     </Grid>
-                    <Grid item sm={1} />
-                    <Grid item sm={7} />
-                    <Grid item xs={12} sm={5} sx={{display:"flex"}}>
+                    <Grid item xs={12} sx={{display:"flex",justifyContent:"center"}}>
                         <button className="secondary-button" style={{background:"none", border:"2px solid #fe9e0d", color:"#fe9e0d", paddingTop:"8px",paddingBottom:"8px"}}>
                             Reset
                         </button>
@@ -197,6 +196,7 @@ function fclExport() {
                 </Grid>
             </Grid>
         </Grid>
+        </Paper>
     )
 }
 

@@ -28,7 +28,7 @@ export default function BasicTable() {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
        
         <TableHead>
-        <TableRow sx={{border:"1px solid #E0E0E0", backgroundColor:"#ccc"}}>
+        <TableRow sx={{border:"1px solid #E0E0E0", backgroundColor:"#FEF9F3"}}>
             <TableCell sx={{borderRight:"1px solid #E0E0E0"}}>Specifications</TableCell>
             <TableCell sx={{borderRight:"1px solid #E0E0E0"}}>8X8'6" Standard 20'</TableCell>
             <TableCell sx={{borderRight:"1px solid #E0E0E0"}}>8X8'6" Standard 40'</TableCell>

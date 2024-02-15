@@ -1,7 +1,7 @@
 import React from "react";
-import PickMeals from "../Assets/fcl.png";
-import ChooseMeals from "../Assets/lcl.png";
-import DeliveryMeals from "../Assets/d2.png";
+import PickMeals from "../Assets/fcl.jpg";
+import ChooseMeals from "../Assets/lcl.jpg";
+import DeliveryMeals from "../Assets/int.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Service = () => {
@@ -36,7 +36,7 @@ const Service = () => {
         {workInfoData.map((data) => (
           <div className="work-section-info" key={data.title} onClick={() => navigate(data.link)}>
             <div className="info-boxes-img-container" >
-              <img src={data.image} alt="" />
+              <img src={data.image} alt="" style={{height:"15rem",borderRadius:"10px"}}/>
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
