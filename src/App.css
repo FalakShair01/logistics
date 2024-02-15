@@ -117,6 +117,68 @@ nav {
 .secondary-button:hover {
   background-color: #e48f0f;
 }
+.primary-heading2 {
+  font-size: clamp(4rem, 5vw, 4rem);
+  color: #faba31;
+  padding-bottom: 15px;
+
+}
+.testimonial-section-bottom2 {
+  margin-top: 2rem;
+  background-color:transparent;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  border-radius: 2rem;
+  flex-direction: row;
+  text-align: center;
+}
+.background-container {
+  background-image: url("./Assets/whyfreight.jpeg");
+  background-size: 500px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px; 
+  border-radius: 2rem; 
+  color: #fff; 
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.testimonial-section-bottom2 p {
+  font-weight: 700;
+  color: #515151;
+  max-width: 500px;
+  font-size: 1.1rem;
+  margin: 2rem 0rem;
+}
+.rounded-image {
+  border-radius: 2rem; 
+  flex-direction: row;
+}
+
+
+.demo-bg {
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: auto;
+  border-radius: 2rem; 
+  flex-direction: row;
+
+}
+
+.demo-content {
+  position: relative;
+}
 .about-section-container {
   margin-top: 20rem;
   position: relative;
@@ -237,7 +299,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 200px;
+  max-width: 800px;
   border-radius: 2rem;
   flex-direction: column;
   text-align: center;
@@ -345,6 +407,10 @@ nav {
   .about-section-image-container {
     width: 100%;
     max-width: 400px;
+  }
+  .home-image-section2{
+    width: 100%;
+    max-width: 600px;
   }
   .primary-heading {
     text-align: center;
