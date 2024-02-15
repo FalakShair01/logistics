@@ -4,7 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-import backgroundImage from '../Assets/b.jpg'; // Import your background image
+// import backgroundImage from '../Assets/b.jpg'; // Import your background image
 
 const Footer = () => {
   return (
